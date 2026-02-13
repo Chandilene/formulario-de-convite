@@ -39,17 +39,20 @@
 
   --logo: 400 2.5rem var(--leckerli);
 
-  --title-md: 700 1.75rem (var(--ballo));
-  --title-sm: 700 1.125rem (var(--ballo));
+  --title-md: 700 1.75rem var(--ballo);
+  --title-sm: 700 1.125rem var(--ballo);
 
   --text-md: 1rem var(--open-sans);
   --text-sm: 0.875rem var(--open-sans);
   --text-xs: 0.7 5rem var(--open-sans);
 }
 
-body{
-    overflow: hidden;
-
+body {
+  overflow: hidden;
 }
 
-
+h2 {
+  font: var(--title-md);
+  color: var(--text-heading);
+  margin-top: 5rem;
+}

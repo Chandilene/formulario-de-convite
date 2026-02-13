@@ -1,14 +1,13 @@
 #app {
-    display: grid;
-    grid-template-columns: 33.33% 66.67%;
+  display: grid;
+  grid-template-columns: 33.33% 66.67%;
 
-    background-color: #1e1e1e;
-    height: 100vh;
-    overflow: hidden;
+  background-color: #1e1e1e;
+  height: 100vh;
+  overflow: hidden;
 }
 
 aside {
- 
   background-image: url(../assets/Background.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,8 +38,14 @@ aside {
   }
 }
 
-main{
-    margin: 1.25rem;
-    border-radius: 0.75rem;
-    background-color:  var(--shape-body);
+main {
+    overflow: auto;
+  margin: 1.25rem;
+  border-radius: 0.75rem;
+  background-color: var(--shape-body);
+
+  .main-container {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
 }
