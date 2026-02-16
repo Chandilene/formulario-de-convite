@@ -54,7 +54,7 @@ Por ser uma aplicação front-end estática, o processo é simples:
 Clone o repositório:
 
 Bash
-git clone [https://github.com/seu-usuario/festivite.git](https://github.com/seu-usuario/festivite.git)
+git clone https://github.com/Chandilene/formulario-de-convite.git
 Abra o projeto:
 
 Navegue até a pasta e abra o arquivo index.html no seu navegador.
