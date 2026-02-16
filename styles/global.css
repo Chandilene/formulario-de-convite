@@ -44,7 +44,7 @@
 
   --text-md: 1rem var(--open-sans);
   --text-sm: 0.875rem var(--open-sans);
-  --text-xs: 0.7 5rem var(--open-sans);
+  --text-xs: 0.75rem var(--open-sans);
 }
 
 body {

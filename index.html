@@ -25,7 +25,7 @@
       </aside>
       <main>
         <div class="main-container">
-          <form action="">
+          <form action="" enctype="multipart/form-data">
             <h2>Crie seu convite</h2>
             <fieldset class="about-event">
               <legend>
@@ -435,53 +435,127 @@
                 </div>
               </div>
 
-              <div class="grid">
-                <div class="input-wrapper">
-                  <label for="inicial">Início</label>
-                  <input type="date" id="inicial" name="inicial" lang="pt-BR" />
-                </div>
-
-                <div class="input-wrapper">
-                  <label for="end">Fim</label>
-                  <input type="date" id="end" name="end" lang="pt-BR" />
-                </div>
-
+              <div class="style-options">
                 <div class="input-wrapper">
                   <label>Estilo</label>
-                  <div class="radio-group">
-                    <div class="radio-inner">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="12" cy="12" r="12" fill="#363B40" />
-                      </svg>
-
-                      
-                      
-                    </div>
-                    <p class="escuro">Escuro</p>
-                    <p class="claro">Claro</p>
-
-                    <div class="upload">
-                    <label> Foto de capa </label>
-                      <label for="capa">Online</label>
+                  <div class="switch-container">
+                    <label class="switch">
                       <input
-                        type="file"
-                        name="capa"
-                        
-                        id="capa"
+                        type="checkbox"
+                        id="theme-toggle"
+                        name="theme-toggle"
                       />
-                    </div>
+                      <span class="slider"></span>
+                    </label>
+                    <span class="text"></span>
                   </div>
                 </div>
 
-               
+                <div class="input-wrapper">
+                  <label for="cover-photo">Foto de capa</label>
+                  <div class="file-upload-wrapper">
+                    <label for="cover-photo" class="btn-upload">
+                      <img src="assets/icons/upload.svg" alt="" /> Selecionar
+                    </label>
+                    <input
+                      type="file"
+                      id="cover-photo"
+                      name="cover-photo"
+                      accept="image/*"
+                    />
+                    
+                    <span class="file-name">Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
               </div>
             </fieldset>
+
+            <fieldset class="Contact">
+              <legend>
+                <img src="assets/icons/contact.svg" alt="icone de contato" />
+                Dados para contato
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="name-contact">Nome</label>
+                <input
+                  type="text"
+                  id="name-contact"
+                  name="name-contact"
+                  placeholder="Nome completo"
+                  required
+                />
+                <div class="error">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="ícone de alerta vermelho"
+                  />
+                  <span>Campo obrigatório</span>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="input-wrapper">
+                  <label for="email-contact">E-mail</label>
+                  <input
+                    type="email"
+                    id="email-contact"
+                    name="email-contact"
+                    placeholder="exemplo@email.com"
+                    required
+                  />
+                  <div class="error">
+                  <img
+                    src="assets/icons/circle-alert.svg"
+                    alt="ícone de alerta vermelho"
+                  />
+                  <span>Campo obrigatório</span>
+                </div>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="tel-contact">Telefone</label>
+                  <input
+                    type="tel"
+                    id="tel-contact"
+                    name="tel-contact"
+                    placeholder="(99) 99999-9999"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset class="terms">
+              <div class="terms-wrapper">
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms">
+                  Li e concordo com os
+                  <a href="#"> Termos e Condições</a> e com a
+                  <a href="#">Política de Privacidade</a>
+                </label>
+              </div>
+
+              <div class="terms-wrapper">
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms">
+                  Aceito receber atualizações e promoções por e-mail
+                </label>
+              </div>
+
+              <div class="terms-wrapper">
+                <input type="checkbox" name="terms" id="terms" />
+                <label for="terms">
+                  Aceito receber atualizações e promoções por SMS
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="invitation">
+              <button type="submit">
+                <img src="assets/icons/ticket.svg" alt="" />
+                Gerar convite
+              </button>
+            </div>
           </form>
         </div>
       </main>
