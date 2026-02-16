@@ -45,6 +45,7 @@ FORMULÁRIO/
 │   ├── terms.css       # Estilos da seção de termos e checkboxes
 │   └── index.css       # Arquivo central que importa todos os estilos
 └── index.html          # Estrutura da página
+```
 
 
 
@@ -55,6 +56,7 @@ Clone o repositório:
 
 Bash
 git clone https://github.com/Chandilene/formulario-de-convite.git
+
 Abra o projeto:
 
 Navegue até a pasta e abra o arquivo index.html no seu navegador.
